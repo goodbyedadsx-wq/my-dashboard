@@ -52,7 +52,7 @@ export default function CyberpunkDashboard() {
   const login = () => {
     setLoginError('')
     const found = accounts.find(
-      (account) =>
+      (account: any) =>
         account.username === username &&
         account.password === password
     )
